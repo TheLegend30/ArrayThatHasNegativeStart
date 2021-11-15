@@ -1,9 +1,21 @@
 package com.company;
 
-public class NegArray{
-    private Object arr[];
+import java.io.ObjectStreamException;
 
-    public NegArray(int startIndex,int endIndex){
-        arr = new Object[(endIndex-startIndex)];
+public class NegArray {
+    private int startIndex;
+    private int arr[];
+
+    public NegArray(int startIndex, int endIndex) {
+        this.startIndex = startIndex;
+        arr = new int[(endIndex - startIndex)];
+    }
+
+    public void SetValue(int value, int index) {
+        this.arr[index - this.startIndex] = value;
+    }
+
+    public int GetValue(int index) {
+        return this.arr[index - this.startIndex];
     }
 }
