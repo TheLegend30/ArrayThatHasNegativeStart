@@ -11,11 +11,11 @@ public class NegArray {
         arr = new int[(endIndex - startIndex)];
     }
 
-    public void SetValue(int value, int index) {
+    public void setValue(int value, int index) {
         this.arr[index - this.startIndex] = value;
     }
 
-    public int GetValue(int index) {
+    public int getValue(int index) {
         return this.arr[index - this.startIndex];
     }
 }
