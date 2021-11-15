@@ -1,11 +1,9 @@
 package com.company;
 
-public class NegArray <T>{
-    private int startIndex;
-    private int endIndex;
-    private T arr[];
+public class NegArray{
+    private Object arr[];
 
     public NegArray(int startIndex,int endIndex){
-
+        arr = new Object[(endIndex-startIndex)];
     }
 }
